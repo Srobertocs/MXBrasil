@@ -1,0 +1,29 @@
+.header-bg{
+  background: var(--cor-secundaria-c9);
+  padding: 28px 0px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
+}
+
+.header-nav{
+  display: flex;
+  gap: 24px;
+}
+
+.header-nav a{
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: 1s;
+  padding: 7px 12px;
+}
+
+.header-nav a:hover{
+  border-color: var(--cor-principal-v1);
+}
+

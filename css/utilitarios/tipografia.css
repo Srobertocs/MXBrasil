@@ -1,0 +1,48 @@
+.font-3-s{
+  font: 400 1rem/1.5 "Lato", sans-serif;
+}
+
+.font-3-l{
+  font: 400 1.125rem/1.5 "Lato", sans-serif;
+}
+
+.font-3-m{
+  font: 400 1.5rem/1.5 "Lato", sans-serif;
+}
+
+.font-3-m-b{
+  font: 700 1.5rem/1.5 "Lato", sans-serif;
+}
+
+.font-2-m{
+  font: 400 1.5rem/1.5 "Anton", sans-serif;
+}
+
+.font-2-xxl{
+  font: 400 4rem/1.5 "Anton", sans-serif;
+}
+
+.font-1-s{
+  font: 400 1rem/1.5 "Bebas Neue", sans-serif;
+}
+
+.font-1-l{
+  font: 400 1.125rem/1.5 "Bebas Neue", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.font-1-m{
+  font: 400 1.5rem/1.5 "Bebas Neue", sans-serif;
+}
+
+.font-1-x{
+  font: 400 2rem/1.5 "Bebas Neue", sans-serif;
+}
+
+.font-1-xx{
+  font: 400 2.25rem/1.33 "Bebas Neue", sans-serif;
+}
+
+.font-xxl{
+  font: 400 4rem/1.125 "Bebas Neue", sans-serif;
+}

@@ -1,0 +1,8 @@
+/*Pacote Utilitários*/
+@import "./utilitarios/cores.css";
+@import "./utilitarios/tipografia.css";
+@import "./utilitarios/componentes.css";
+
+/*Pacote Global*/
+@import "./global/header.css";
+@import "./global/global.css";
