@@ -1,6 +1,5 @@
 .header-bg{
   background: var(--cor-secundaria-c9);
-  padding: 28px 0px;
 }
 
 .header{
@@ -8,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  padding: 20px;
+  padding: 48px;
 }
 
 .header-nav{
@@ -19,7 +18,7 @@
 .header-nav a{
   border: 2px solid transparent;
   border-radius: 50%;
-  transition: 1s;
+  transition: 0.9s;
   padding: 7px 12px;
 }
 
