@@ -43,6 +43,7 @@
   font: 400 2.25rem/1.33 "Bebas Neue", sans-serif;
 }
 
-.font-xxl{
+.font-1-xxl{
   font: 400 4rem/1.125 "Bebas Neue", sans-serif;
+  letter-spacing: 0.05em;
 }
