@@ -6,7 +6,10 @@
 /*Pacote Global*/
 @import "./global/header.css";
 @import "./global/global.css";
+@import "./global/footer.css";
 
 
 /*Pacote Home*/
 @import "./home/introducao.css";
+@import "./home/trilhas.css";
+@import "./home/circuitos.css";
