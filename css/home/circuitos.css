@@ -31,6 +31,7 @@
   overflow-x: auto;
 }
 
+
 .circuito ul h3::before{
   content: "";
   display: inline-block;
@@ -41,6 +42,24 @@
   margin-right: 8px;
 }
 
+.circuito-img:hover img{
+  transform: scale(1.1);
+}
+
+.circuito-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.circuito-img{
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .info-circuito{
   display: flex;
   margin-top: 24px;
@@ -48,8 +67,5 @@
   gap: 8px;
 }
 
-.circuito li img{
-  border-radius: 5px;
-}
 
 

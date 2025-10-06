@@ -13,3 +13,7 @@
 @import "./home/introducao.css";
 @import "./home/trilhas.css";
 @import "./home/circuitos.css";
+
+/*Pacote Circuitos*/
+@import "./trilhas/lista-trilhas.css";
+@import "./trilhas/trilhas-titulo.css";

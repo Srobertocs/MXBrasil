@@ -1,0 +1,9 @@
+.trilha-introducao-bg{
+  background: var(--cor-principal-v2);
+}
+.trilha-introducao{
+  padding: 60px 20px;
+}
+.trilha-introducao h1{
+  text-align: center;
+}

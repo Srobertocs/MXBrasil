@@ -1,0 +1,46 @@
+.lista-trilhas-bg:nth-child(odd){
+  background:linear-gradient(to right, #ffffff 30%, #141313 0%);
+}
+
+.lista-trilhas-conteudo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 48px;
+}
+
+.lista-trilhas-conteudo-fundo-preto{
+  padding-bottom: 48px;
+  padding-top: 48px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.lista-trilhas-conteudo--primeiro{
+  padding-top: 120px;
+}
+
+.lista-trilhas-conteudo--ultimo{
+  padding-bottom: 120px;
+}
+
+.lista-trilhas-conteudo img{
+  border-radius: 5px;
+}
+
+.lista-trilhas-conteudo p{
+  margin-top: 12px;
+}
+
+.detalhe-conteudo{
+  display: grid;
+  margin-top: 180px;
+  grid-template-columns: 1fr 2fr;
+}
+
+.detalhe-conteudo-icones{
+  display: flex;
+  justify-self: end;
+  gap: 8px;
+}
