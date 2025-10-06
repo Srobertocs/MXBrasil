@@ -1,0 +1,13 @@
+.formulario-inscricao-bg{
+  background: linear-gradient(to bottom, #af0600 43%, #ffffff 0%);
+}
+
+.formulario-inscricao{
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  padding: 60px 112px 120px 112px;
+}
+.formulario-inscricao-conteudo{
+  background: var(--cor-secundaria-c9);
+  
+}
