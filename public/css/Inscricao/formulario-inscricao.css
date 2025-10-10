@@ -5,7 +5,7 @@
 .formulario-inscricao{
   display: grid;
   grid-template-columns: 1fr 1.4fr;
-  padding: 60px 112px 120px 112px;
+  padding: 30px 112px 120px 112px;
 }
 .formulario-inscricao-conteudo{
   background: var(--cor-secundaria-c9);
