@@ -25,3 +25,14 @@ img{
   max-width: 100%;
   display: block;
 }
+fieldset{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+input{
+  margin: 0px;
+  padding: 0px;
+  border: 2px solid var(--cor-secundaria-c9);
+}

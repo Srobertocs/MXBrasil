@@ -1,13 +1,82 @@
-.formulario-inscricao-bg{
-  background: linear-gradient(to bottom, #af0600 43%, #ffffff 0%);
+.formulario-bg{
+  background: linear-gradient(to bottom, #af0600 40%, #ffffff 0%);
 }
 
 .formulario-inscricao{
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  padding: 30px 112px 120px 112px;
+  grid-template-columns: 1fr 1.7fr;
+  padding: 30px 80px 120px 80px;
 }
-.formulario-inscricao-conteudo{
+.formulario-inscricao-bg{
   background: var(--cor-secundaria-c9);
-  
 }
+
+.titulo-formulario{
+  padding: 48px 72px 18px 72px;
+}
+
+.titulo-formulario p{
+  position: relative;
+  padding-left: 8px;
+}
+
+.titulo-formulario p::before{
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 27px;
+  width: 4px;
+  background-color: var(--cor-principal-v2);
+
+}
+
+.formulario-inscricao-conteudo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px 48px;
+  padding: 18px 72px 0px 72px;
+}
+
+.formulario-parte01 input{
+  margin-top: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario-parte01 label{
+  display: block;
+}
+
+.formulario-inscricao-conteudo fieldset {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+}
+
+.formulario-inscricao-conteudo fieldset div{
+  display: flex;
+  gap: 12px;
+}
+
+.formulario-parte01.cpf, 
+.formulario-parte01.email{
+  grid-column: 1/-1;
+}
+
+.formulario-parte01 input{
+  background: var(--cor-secundaria-c9);
+  padding: 8px 16px;
+  border-bottom: 2px solid var(--cor-w);
+  border-radius: 5px;
+  color: var(--cor-w);
+  font: 400 0,75rem/1.5 "Lato", sans-serif;
+}
+
+.formulario-parte01 input:focus{
+  outline: none;
+  border-color: var(--cor-w);
+}
+
+
+
