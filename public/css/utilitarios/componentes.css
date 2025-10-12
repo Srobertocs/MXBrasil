@@ -17,6 +17,11 @@
   text-transform: uppercase;
   padding: 8px 32px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover{
+  
 }
 
 

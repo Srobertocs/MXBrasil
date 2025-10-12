@@ -78,6 +78,11 @@
   border-color: var(--cor-w);
 }
 
+.formulario-botao{
+  grid-column: 1/-1;
+  text-align: center;
+}
+
 /* Customizão do Rádio */
 
 input[type="radio"]{
