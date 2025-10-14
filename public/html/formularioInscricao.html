@@ -24,7 +24,7 @@
 
       <nav>
         <ul class="header-nav cor-white font-1-l">
-          <li><a href="#">Login</a></li>
+          <li><a href="./login.html">Login</a></li>
           <li><a href="./formularioInscricao.html">Inscrever-se</a></li>
           <li><a href="./trilhas.html">Trilhas</a></li>
         </ul>
@@ -46,79 +46,77 @@
 
         <img src="../img/inscricoes/inscricoes.jpg" alt=" Imagem do formulário de inscrição">
 
-        <div class="formulario-inscricao-bg">
-          <form action="" class="cor-white font-1-l">
-            <div class="titulo-formulario">
-              <p>Dados Pessoais</p>
+        <form action="" class="cor-white font-1-l formulario-inscricao-bg">
+          <div class="titulo-formulario">
+            <p>Dados Pessoais</p>
+          </div>
+
+          <div class="formulario-inscricao-conteudo">
+            <!-- Input do nome -->
+            <div class="formulario-parte01">
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" id="nome">
+            </div>
+            <!-- Input do sobrenome -->
+            <div class="formulario-parte01">
+              <label for="sobrenome">Sobrenome</label>
+              <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+            <!-- Input do modelo da moto -->
+            <div class="formulario-parte01">
+              <label for="modeloMoto">Modelo da moto</label>
+              <input type="text" name="modeloMoto" id="modeloMoto">
+            </div>
+            <!-- Input da placa da moto -->
+            <div class="formulario-parte01">
+              <label for="placa">Placa</label>
+              <input type="text" name="placa" id="placa" placeholder="XXX-9999">
+            </div>
+            <!-- Input do CPF-->
+            <div class="formulario-parte01 cpf">
+              <label for="cpf">Cpf</label>
+              <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+            </div>
+            <!-- Input do e-mail -->
+            <div class="formulario-parte01 email">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email">
             </div>
 
-            <div class="formulario-inscricao-conteudo">
-              <!-- Input do nome -->
-              <div class="formulario-parte01">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+            <fieldset>
+              <legend>Selecione a trilha para o desafio:</legend>
+              <!-- Opção Serra da Canastra -->
+              <div>
+                <input type="radio" name="trilha" id="serraDaCanastra" value="canastra" required>
+                <label for="serraDaCanastra"><span class="radio-customizado"></span> Serra da Canastra</label>
               </div>
-              <!-- Input do sobrenome -->
-              <div class="formulario-parte01">
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+              <!-- Opção Jalapão -->
+              <div>
+                <input type="radio" name="trilha" id="jalapao" value="jalapao">
+                <label for="jalapao"><span class="radio-customizado"></span> Jalapão</label>
               </div>
-              <!-- Input do modelo da moto -->
-              <div class="formulario-parte01">
-                <label for="modeloMoto">Modelo da moto</label>
-                <input type="text" name="modeloMoto" id="modeloMoto">
+              <!-- Opção Vale Europeu -->
+              <div>
+                <input type="radio" name="trilha" id="valeEuropeu" value="vale_europeu">
+                <label for="valeEuropeu"><span class="radio-customizado"></span> Vale Europeu</label>
               </div>
-              <!-- Input da placa da moto -->
-              <div class="formulario-parte01">
-                <label for="placa">Placa</label>
-                <input type="text" name="placa" id="placa" placeholder="XXX-9999">
+              <!-- Opção Lençois Maranhenses -->
+              <div>
+                <input type="radio" name="trilha" id="lencoisMaranhenses" value="lencois">
+                <label for="lencoisMaranhenses"><span class="radio-customizado"></span> Lençois Maranhenses</label>
               </div>
-              <!-- Input do CPF-->
-              <div class="formulario-parte01 cpf">
-                <label for="cpf">Cpf</label>
-                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+              <!-- Opção Jericoacoara -->
+              <div>
+                <input type="radio" name="trilha" id="jericoacoara" value="jeri">
+                <label for="jericoacoara"><span class="radio-customizado"></span> Jericoacoara</label>
               </div>
-              <!-- Input do e-mail -->
-              <div class="formulario-parte01 email">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
-              </div>
+            </fieldset>
 
-              <fieldset>
-                <legend>Selecione a trilha para o desafio:</legend>
-                <!-- Opção Serra da Canastra -->
-                <div>
-                  <input type="radio" name="trilha" id="serraDaCanastra" value="canastra" required>
-                  <label for="serraDaCanastra"><span class="radio-customizado"></span> Serra da Canastra</label>
-                </div>
-                <!-- Opção Jalapão -->
-                <div>
-                  <input type="radio" name="trilha" id="jalapao" value="jalapao">
-                  <label for="jalapao"><span class="radio-customizado"></span> Jalapão</label>
-                </div>
-                <!-- Opção Vale Europeu -->
-                <div>
-                  <input type="radio" name="trilha" id="valeEuropeu" value="vale_europeu">
-                  <label for="valeEuropeu"><span class="radio-customizado"></span> Vale Europeu</label>
-                </div>
-                <!-- Opção Lençois Maranhenses -->
-                <div>
-                  <input type="radio" name="trilha" id="lencoisMaranhenses" value="lencois">
-                  <label for="lencoisMaranhenses"><span class="radio-customizado"></span> Lençois Maranhenses</label>
-                </div>
-                <!-- Opção Jericoacoara -->
-                <div>
-                  <input type="radio" name="trilha" id="jericoacoara" value="jeri">
-                  <label for="jericoacoara"><span class="radio-customizado"></span> Jericoacoara</label>
-                </div>
-              </fieldset>
-
-              <div class="formulario-botao">
-                <button class="button">Enviar</button>
-              </div>
+            <div class="formulario-botao">
+              <button class="button">Enviar</button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </main>
@@ -131,10 +129,10 @@
       </a>
 
       <div class="footer-paginas">
-        <p class="cor-white font-2-m">Página</p>
+        <p class="cor-white font-2-m">Páginas</p>
         <nav>
           <ul class="cor-secundaria-c4 font-1-l footer-nav">
-            <li><a href="#">Login</a></li>
+            <li><a href="./login.html">Login</a></li>
             <li><a href="./formularioInscricao.html">Inscrever-se</a></li>
             <li><a href="#">Trilhas</a></li>
           </ul>

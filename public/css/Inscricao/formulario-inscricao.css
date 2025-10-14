@@ -68,13 +68,13 @@
   background: var(--cor-secundaria-c9);
   padding: 8px 16px;
   border-bottom: 2px solid var(--cor-w);
-  border-radius: 5px;
   color: var(--cor-w);
   font: 400 0,75rem/1.5 "Lato", sans-serif;
 }
 
 .formulario-parte01 input:focus{
   outline: none;
+  border-radius: 20px;
   border-color: var(--cor-w);
 }
 

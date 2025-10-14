@@ -1,0 +1,75 @@
+.login{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.login-imagem img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  margin: auto;
+}
+
+.login-conteudo label{
+  display: block;
+  position: relative;
+  padding-left: 8px;
+}
+
+.login-conteudo label::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 32px;
+  width: 4px;
+  background-color: var(--cor-principal-v2);
+}
+
+.inputUsuario,
+.inputSenha{
+  padding-top: 60px;
+}
+
+.linkCadastro{
+  padding: 16px 0px 32px 0px;
+}
+
+.linkCadastro a{
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.login-conteudo input{
+  padding: 8px 16px;
+  margin-top: 8px;
+  border-bottom: 2px solid var(--cor-secundaria-c9);
+  font: 400 0,75rem/1.5 "Lato", sans-serif;
+
+}
+
+.botao-login button{
+  display: block;
+  margin: 0 auto;
+}
+
+.titulo-login{
+  text-align: center;
+}
+
+.login-conteudo h3{
+  text-transform: uppercase;
+}
+
+.login-conteudo input:focus{
+  border-radius: 20px;
+}

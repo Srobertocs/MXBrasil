@@ -21,4 +21,7 @@
 @import "./Inscricao/formulario-inscricao.css";
 @import "./Inscricao/titulo-inscricao.css";
 
+/*Pacote de Login*/
+@import "./login/login.css";
+
 
