@@ -1,0 +1,7 @@
+CREATE SCHEMA site;
+
+CREATE TABLE IF NOT EXISTS site.usuarios( 
+  id SERIAL PRIMARY KEY,
+  usuario   VARCHAR(100) NOT NULL UNIQUE,
+  senha     VARCHAR(100) NOT NULL,  
+)
