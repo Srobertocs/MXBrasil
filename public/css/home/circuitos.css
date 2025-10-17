@@ -31,7 +31,6 @@
   overflow-x: auto;
 }
 
-
 .circuito ul h3::before{
   content: "";
   display: inline-block;

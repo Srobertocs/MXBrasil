@@ -66,6 +66,7 @@
 
 .formulario-parte01 input{
   background: var(--cor-secundaria-c9);
+  border-radius: 20px;
   padding: 8px 16px;
   border-bottom: 2px solid var(--cor-w);
   color: var(--cor-w);
@@ -74,7 +75,6 @@
 
 .formulario-parte01 input:focus{
   outline: none;
-  border-radius: 20px;
   border-color: var(--cor-w);
 }
 
