@@ -1,16 +1,16 @@
-.login{
+.cadastro{
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
 
-.login-imagem img{
+.cadastro-imagem img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.login-conteudo{
+.cadastro-conteudo{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,13 +19,13 @@
   margin: auto;
 }
 
-.login-conteudo label{
+.cadastro-conteudo label{
   display: block;
   position: relative;
   padding-left: 8px;
 }
 
-.login-conteudo label::before{
+.cadastro-conteudo label::before{
   content: "";
   position: absolute;
   left: 0;
@@ -35,21 +35,7 @@
   background-color: var(--cor-principal-v2);
 }
 
-.inputUsuario,
-.inputSenha{
-  padding-top: 60px;
-}
-
-.linkCadastro{
-  padding: 16px 0px 32px 0px;
-}
-
-.linkCadastro a{
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-
-.login-conteudo input{
+.cadastro-conteudo input{
   padding: 8px 16px;
   border-radius: 20px;
   margin-top: 16px;
@@ -57,13 +43,16 @@
   font: 400 0,75rem/1.5 "Lato", sans-serif;
 
 }
-
-.botao-login button{
+.botao-cadastro{
+  padding-top: 60px;
+}
+.botao-cadastro button{
   display: block;
   margin: 0 auto;
 }
 
-.titulo-login{
+.titulo-cadastro{
   text-align: center;
   text-transform: uppercase;
 }
+

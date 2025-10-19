@@ -28,4 +28,9 @@ router.get('/trilhas', (req, res) =>{
   res.sendFile(path.join(publicDir, 'html', 'trilhas.html'));
 });
 
+/*Página de Cadastro*/
+router.get('/cadastro', (req, res) => {
+  res.sendFile(path.join(publicDir, 'html', 'cadastro.html'));
+})
+
 module.exports = router;

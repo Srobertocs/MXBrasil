@@ -1,7 +1,7 @@
 const express = require('express');
 const {Pool} = require('pg');
 const path = require('path');
-const pagesRouter = require('./routes/pages');
+const pagesRouter = require('./routes/pages.js');
 const app = express();
 
 /*Conexão com o banco de dados*/ 
@@ -12,10 +12,11 @@ const pool = new Pool({
   database: "postgres",
   password: "682435"
 });
-
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, 'public')));
+/*Chama todos os caminhos com / na página de rotas*/
 app.use('/', pagesRouter);
+
 
 app.listen(3000);
