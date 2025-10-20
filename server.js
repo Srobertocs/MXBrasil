@@ -5,6 +5,7 @@ const path = require('path');
 /*Importação dos Roteadores*/
 const pagesRouter = require('./routes/pages.js');
 const cadastroUsuarioRouter = require('./routes/cadastroUsuario.js');
+const loginUsuarioRouter = require('./routes/loginUsuario.js');
 
 /*Configuração do Express*/
 const app = express();
@@ -25,6 +26,7 @@ app.use(express.json());
 /*Chama todos os caminhos com / na página de rotas*/
 app.use('/', pagesRouter);
 app.use('/', cadastroUsuarioRouter(pool));
+app.use('/', loginUsuarioRouter(pool));
 
 pool.connect()
   .then(() => {

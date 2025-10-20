@@ -21,18 +21,21 @@
     </div>
 
     <div class="login-conteudo">
-      <form action="">
+      <form id="formularioLogin">
         <div class="font-2-x titulo-login">
           <h3 class="cor-secundaria-c9"> Login</h3>
         </div>
+
+        <span id="mensagemErroLogin" class="mensagem-erro-login cor-principal-v1 font-3-sx-b "></span>
+
         <div class="inputUsuario">
-          <label class="font-1-m" for="usuario">Usuário</label>
-          <input class="inputBranco" type="text" name="usuario" id="usuario" required>
+          <label class="font-1-m" for="loginUsuario">Usuário</label>
+          <input class="inputBranco" type="text" name="loginUsuario" id="loginUsuario" required>
         </div>
 
         <div class="inputSenha">
-          <label class="font-1-m" for="senha">Senha</label>
-          <input class="inputBranco" type="password" name="senha" id="senha" required>
+          <label class="font-1-m" for="loginSenha">Senha</label>
+          <input class="inputBranco" type="password" name="loginSenha" id="loginSenha" required>
         </div>
 
         <div class="linkCadastro cor-principal-v1 font-3-sx-b">
@@ -40,9 +43,10 @@
         </div>
 
         <div class="botao-login">
-          <button class="button">Acessar</button>
+          <button type="submit" class="button">Acessar</button>
         </div>
       </form>
     </div>
   </main>
+  <script src="../js/script.js"></script>
 </body>

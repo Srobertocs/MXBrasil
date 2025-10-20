@@ -22,6 +22,7 @@ module.exports = (pool) => {
       res.status(201).json({
         mensagem: 'Usuário cadastrado com sucesso !!'
       });
+      
     }catch(error){
       if(error.code == '23505'){ /*Código para usuários repetidos no banco de dados*/
         return res.status(409).json({mensagem: 'Nome de usuario já existente'});
