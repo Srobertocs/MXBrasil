@@ -46,7 +46,7 @@
 
         <img src="../img/inscricoes/inscricoes.jpg" alt=" Imagem do formulário de inscrição">
 
-        <form action="" class="cor-white font-1-l formulario-inscricao-bg">
+        <form id="formularioInscricao" class="cor-white font-1-l formulario-inscricao-bg">
           <div class="titulo-formulario">
             <p>Dados Pessoais</p>
           </div>
@@ -55,65 +55,65 @@
             <!-- Input do nome -->
             <div class="formulario-parte01">
               <label for="nome">Nome</label>
-              <input type="text" name="nome" id="nome">
+              <input type="text" name="nome" id="nome" required>
             </div>
             <!-- Input do sobrenome -->
             <div class="formulario-parte01">
               <label for="sobrenome">Sobrenome</label>
-              <input type="text" name="sobrenome" id="sobrenome">
+              <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
             <!-- Input do modelo da moto -->
             <div class="formulario-parte01">
               <label for="modeloMoto">Modelo da moto</label>
-              <input type="text" name="modeloMoto" id="modeloMoto">
+              <input type="text" name="modeloMoto" id="modeloMoto" required>
             </div>
             <!-- Input da placa da moto -->
             <div class="formulario-parte01">
               <label for="placa">Placa</label>
-              <input type="text" name="placa" id="placa" placeholder="XXX-9999">
+              <input type="text" name="placa" id="placa" placeholder="XXX-9999" maxlength="8" required>
             </div>
             <!-- Input do CPF-->
             <div class="formulario-parte01 cpf">
               <label for="cpf">Cpf</label>
-              <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+              <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" maxlength="14" required>
             </div>
             <!-- Input do e-mail -->
             <div class="formulario-parte01 email">
               <label for="email">E-mail</label>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" required>
             </div>
 
             <fieldset>
               <legend>Selecione a trilha para o desafio:</legend>
               <!-- Opção Serra da Canastra -->
               <div>
-                <input type="radio" name="trilha" id="serraDaCanastra" value="canastra" required>
+                <input type="radio" name="trilha" id="serraDaCanastra" value="1" required>
                 <label for="serraDaCanastra"><span class="radio-customizado"></span> Serra da Canastra</label>
               </div>
               <!-- Opção Jalapão -->
               <div>
-                <input type="radio" name="trilha" id="jalapao" value="jalapao">
+                <input type="radio" name="trilha" id="jalapao" value="6">
                 <label for="jalapao"><span class="radio-customizado"></span> Jalapão</label>
               </div>
               <!-- Opção Vale Europeu -->
               <div>
-                <input type="radio" name="trilha" id="valeEuropeu" value="vale_europeu">
+                <input type="radio" name="trilha" id="valeEuropeu" value="7">
                 <label for="valeEuropeu"><span class="radio-customizado"></span> Vale Europeu</label>
               </div>
               <!-- Opção Lençois Maranhenses -->
               <div>
-                <input type="radio" name="trilha" id="lencoisMaranhenses" value="lencois">
+                <input type="radio" name="trilha" id="lencoisMaranhenses" value="8">
                 <label for="lencoisMaranhenses"><span class="radio-customizado"></span> Lençois Maranhenses</label>
               </div>
               <!-- Opção Jericoacoara -->
               <div>
-                <input type="radio" name="trilha" id="jericoacoara" value="jeri">
+                <input type="radio" name="trilha" id="jericoacoara" value="9">
                 <label for="jericoacoara"><span class="radio-customizado"></span> Jericoacoara</label>
               </div>
             </fieldset>
 
             <div class="formulario-botao">
-              <button class="button">Enviar</button>
+              <button type="submit" class="button">Enviar</button>
             </div>
           </div>
         </form>
@@ -143,4 +143,6 @@
 
     </div>
   </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/marcara.js"></script>
 </body>

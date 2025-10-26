@@ -18,7 +18,6 @@ module.exports = (pool) => {
 
       const result = await pool.query(query, values);
 
-
       res.status(201).json({
         mensagem: 'Usuário cadastrado com sucesso !!'
       });
@@ -32,6 +31,5 @@ module.exports = (pool) => {
       res.status(500).json({mensagem: 'Erro interno no servidor ao tentar cadastrar.'});
     }
   });
-
   return router;
 }

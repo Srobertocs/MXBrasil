@@ -6,6 +6,7 @@ const path = require('path');
 const pagesRouter = require('./routes/pages.js');
 const cadastroUsuarioRouter = require('./routes/cadastroUsuario.js');
 const loginUsuarioRouter = require('./routes/loginUsuario.js');
+const inscricaoParticipante = require('./routes/inscricaoParticipante.js')
 
 /*Configuração do Express*/
 const app = express();
@@ -27,6 +28,7 @@ app.use(express.json());
 app.use('/', pagesRouter);
 app.use('/', cadastroUsuarioRouter(pool));
 app.use('/', loginUsuarioRouter(pool));
+app.use('/', inscricaoParticipante(pool));
 
 pool.connect()
   .then(() => {

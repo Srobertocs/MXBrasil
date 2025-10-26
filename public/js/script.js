@@ -1,7 +1,6 @@
 /*Cadastro do usuário*/
 
 const formCadastro = document.getElementById('formularioCadastro');
-
 if(formCadastro){
   formCadastro.addEventListener('submit', function(event){
     event.preventDefault();
@@ -18,11 +17,11 @@ if(formCadastro){
     /*Transforma o objeto em json*/
     const jsonDados = JSON.stringify(objetoDados);
 
-    enviarDadosJson(jsonDados, form);
+    enviarJsonCadastroUsuario(jsonDados, form);
   });
 }
 
-function enviarDadosJson(jsonDados, form){
+function enviarJsonCadastroUsuario(jsonDados, form){
 
   fetch('/cadastrousuario', {
     method: 'POST',
@@ -51,7 +50,6 @@ function enviarDadosJson(jsonDados, form){
 };
 
 /*Login do usuário*/
-
 const formLogin = document.getElementById('formularioLogin');
 if(formLogin){
   formLogin.addEventListener('submit', function(event){
@@ -73,11 +71,11 @@ if(formLogin){
     const elementoErro = document.getElementById('mensagemErroLogin');
     elementoErro.textContent  = '';
 
-    loginUsuario(jsonDados, form, elementoErro);
+    enviarJsonLoginUsuario(jsonDados, form, elementoErro);
   });
 }
 
-function loginUsuario(jsonDados, form, elementoErro){
+function enviarJsonLoginUsuario(jsonDados, form, elementoErro){
   fetch('/loginusuario', {
     method: 'POST',
     headers: {
@@ -121,3 +119,63 @@ function loginUsuario(jsonDados, form, elementoErro){
     form.reset(); 
   });
 };
+
+const formInscricao = document.getElementById('formularioInscricao')
+if(formInscricao){
+
+  formInscricao.addEventListener('submit', function(event){
+
+    event.preventDefault();
+
+    /*pega o formulario que disparou o evento*/
+    const form = event.target;
+    
+    /*Cria um objeto formData com todos os inputs do formulário*/
+    const dadosFormulario = new FormData(form);
+
+    /*Converte os dados em um objeto Javascript*/
+    const objetoDados = Object.fromEntries(dadosFormulario.entries());
+
+    /*Transforma o objeto em json*/
+    const jsonDados = JSON.stringify(objetoDados);
+    
+    enviarJsonInscricaoParticipante(jsonDados, form);
+  });
+}
+
+function enviarJsonInscricaoParticipante(jsonDados, form){
+  fetch('/inscricaoParticipante', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: jsonDados
+  })
+
+  .then(response => {
+    return response.json().then(data => ({ status: response.status, ok: response.ok, body: data }));
+  })
+    
+  .then(obj => {
+        
+    if(!obj.ok){
+      throw obj.body;
+    }
+
+        
+    console.log('Inscrição efetuada:', obj.body.mensagem); 
+        
+    form.reset();
+
+    alert('Inscrição efetuada: ' + obj.body.mensagem);
+
+    window.location.href = '/';
+
+  })
+
+  .catch(error => {   
+    console.error('Erro ao enviar dados:', error);
+    const mensagemFinal = error.mensagem || error.message || 'Erro desconhecido de rede.';
+    alert('Erro na Inscrição: ' + mensagemFinal);
+  });
+}
