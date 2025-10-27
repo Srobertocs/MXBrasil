@@ -44,3 +44,45 @@
   justify-self: end;
   gap: 8px;
 }
+
+/* MODAL */
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 19, 19, 0.95);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+.modal-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(175, 6, 0, 0.90);
+}
+
+.modal-titulo-conteudo{
+  padding: 24px 8px;
+  flex-grow: 1;
+}
+
+.botao-fechar{
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 16px;
+  width: 25px;
+  height: 25px;
+}
+
+#listaParticipantes{
+  padding: 24px;
+  overflow-y: auto;
+}
+
+#modalTitulo{
+  text-align: center;
+}
