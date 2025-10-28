@@ -36,13 +36,19 @@
 .detalhe-conteudo{
   display: grid;
   margin-top: 180px;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .detalhe-conteudo-icones{
   display: flex;
   justify-self: end;
-  gap: 8px;
+  align-self: flex-end;
+  gap: 12px;
+}
+
+.detalhe-conteudo-icones img{
+  max-width: 60%;
+  max-height: 60%;
 }
 
 /* MODAL */
@@ -52,9 +58,9 @@
   left: 0;
   z-index: 1000;
   padding: 0px;
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
-  background-color: rgba(20, 19, 19, 0.95);
+  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
 }
 

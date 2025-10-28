@@ -41,7 +41,7 @@ async function buscarInscritos(id_trilha, nome_trilha) {
     if(data.participantes.length === 0) {
       modalTitulo.textContent = 'Sem Incrições até o momento';
     }else{
-      modalTitulo.textContent = `${data.trilha}`;
+      modalTitulo.textContent = `Visualização de Inscritos ${data.trilha}`;
     }
 
     let htmlList = '<ul>';
@@ -73,13 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   botoes.forEach(botao => {
     botao.addEventListener('click', (e) => {
-      e.preventDefault(); // Impede qualquer ação padrão do link
+      e.preventDefault(); 
             
-      // Os atributos de dados no seu HTML são 'data-id-trilha' e 'data-nome-trilha'
       const id_trilha = botao.getAttribute('data-id-trilha');
       const nome_trilha = botao.getAttribute('data-nome-trilha');
             
-      // Chama a função de busca
       if (id_trilha) {
         buscarInscritos(id_trilha, nome_trilha);
       }
