@@ -35,7 +35,7 @@
 
 .detalhe-conteudo{
   display: grid;
-  margin-top: 180px;
+  margin-top: 179px;
   grid-template-columns: 1fr 1fr;
 }
 
